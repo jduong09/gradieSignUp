@@ -1,0 +1,80 @@
+body {
+  font-family: sans-serif;
+}
+
+.div-landing-img {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(200, 49%, 21%);
+}
+
+.div-landing-img > h1 {
+  padding-top: 3rem;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+}
+
+.div-landing-img > div {
+  color: hsl(200, 29%, 64%);
+}
+
+#img-hero {
+  margin-top: -6rem;
+}
+
+.div-sign-up-form {
+  padding: 2.5rem;
+}
+
+.div-sign-up-form > h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.div-sign-up-form > form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 1.5rem;
+}
+
+#input-email, #input-password {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  margin-top: .5rem;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+
+#label-terms {
+  display: flex;
+  align-items: flex-start;
+}
+
+#input-terms {
+  margin-right: .5rem;
+}
+
+#label-terms > span {
+  display: block;
+  width: 65%;
+}
+
+b {
+  color: hsl(200, 49%, 21%);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#input-submit {
+  width: 100%;
+  padding: 1rem;
+  background-color: hsl(200, 49%, 21%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 4px;
+  font-weight: 600;
+}
