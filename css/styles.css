@@ -158,8 +158,17 @@ b {
   }
 
   .div-sign-up-form {
-    padding: 3rem;
+    padding: 2rem 4rem;
     border-bottom-left-radius: 0;
     border-top-right-radius: 8px;
+  }
+
+  #label-terms > span {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+
+  label {
+    margin-bottom: 2rem;
   }
 }
