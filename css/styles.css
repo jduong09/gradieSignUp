@@ -1,17 +1,23 @@
 body {
-  font-family: sans-serif;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
 }
 
 .div-landing-img {
+  width: 100%;
+  height: 500px;
+  position: relative;
   text-align: center;
   color: hsl(0, 0%, 100%);
-  background-color: hsl(200, 49%, 21%);
+  background-color: hsl(200, 50%, 23%);
+  overflow: hidden;
 }
 
 .div-landing-img > h1 {
   padding-top: 3rem;
   margin-bottom: .5rem;
   font-size: 2rem;
+  font-weight: 700;
 }
 
 .div-landing-img > div {
@@ -19,15 +25,21 @@ body {
 }
 
 #img-hero {
-  margin-top: -6rem;
+  display: block;
+  width: 110%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .div-sign-up-form {
-  padding: 2.5rem;
+  padding: 2.75rem;
+  background-color: hsl(0, 0%, 100%);
 }
 
 .div-sign-up-form > h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
@@ -39,6 +51,7 @@ body {
 
 label {
   margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
 #input-email, #input-password {
@@ -48,6 +61,10 @@ label {
   margin-top: .5rem;
   border: 1px solid grey;
   border-radius: 4px;
+}
+
+#input-email, #input-password::placeholder {
+  font-weight: 400;
 }
 
 #label-terms {
@@ -61,11 +78,11 @@ label {
 
 #label-terms > span {
   display: block;
-  width: 65%;
+  width: 75%;
 }
 
 b {
-  color: hsl(200, 49%, 21%);
+  color: hsl(200, 50%, 23%);
   font-weight: 600;
   text-decoration: underline;
 }
@@ -73,8 +90,76 @@ b {
 #input-submit {
   width: 100%;
   padding: 1rem;
-  background-color: hsl(200, 49%, 21%);
+  background-color: hsl(200, 50%, 23%);
   color: hsl(0, 0%, 100%);
   border-radius: 4px;
-  font-weight: 600;
+  font-weight: 400;
+}
+
+@media (min-width: 414px) {
+  body {
+    background-image: url('../Assets/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 8rem 0;
+  }
+
+  main {
+    width: 398px;
+    height: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+
+  .div-landing-img {
+    height: 550px;
+  }
+
+  .div-sign-up-form {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  #img-hero {
+    width: 443px;
+    height: auto;
+  }
+}
+
+/* Tablet View */
+/* Width: 768px */
+/* Height: 1398px */
+
+/* Desktop View Design */
+/* Width: 1440px */
+/* Height: 900px */
+
+@media (min-width: 1200px) {
+  main {
+    display: flex;
+    width: 886px;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .div-landing-img, .div-sign-up-form {
+    width: 50%;
+  }
+
+  .div-landing-img {
+    height: 510px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .div-sign-up-form {
+    padding: 3rem;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 8px;
+  }
 }
